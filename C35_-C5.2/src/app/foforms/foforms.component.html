@@ -1,0 +1,49 @@
+<div class="container p-5">
+	<h1>Formulario de contacto</h1>
+	<form>
+		<div class="row mt-5">
+			<div class="col-3">
+				<label for="myFieldText" class="form-label fw-bold">Nombre</label>
+			</div>
+			<div class="col-3">
+				<div class="mb-3">
+					<input type="text" class="form-control" id="myInputName" aria-describedby="textHelp"
+					 ng-model="nomapels" name="first">
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-3">
+				<label class="form-label fw-bold">Mail</label>
+			</div>
+
+			<div class="col-3">
+				<div class="mb-3">
+					<input type="email" class="form-control" id="myInputEmail" aria-describedby="textHelp"
+						 ng-model="email" name="second">
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-3">
+				<label for="myFieldText" class="form-label fw-bold">Mensaje</label>
+			</div>
+			<div class="col-3">
+				<div class="mb-3">
+					<textarea id="controlTextArea"  rows="3" ng-model="message" name="third"></textarea>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row mt-5">
+			<div class="col-3">
+				<button type="button" class="btn btn-primary mt-4" (click)="sendDataToParent()">Guardar</button>
+			</div>
+		</div>
+
+	</form>
+
+</div>
