@@ -10,7 +10,7 @@ export class FoformsComponent  implements OnInit{
 
 	sum1: number = 0;
 	sum2: number = 0;
-	answer: number = 0;
+	ans: number = 0;
 	usercaptcha: string = '';
 
 	nomapels: string = '';
@@ -28,12 +28,12 @@ export class FoformsComponent  implements OnInit{
 	calcNum(): void {
 this.sum1 = 1;		this.sum2 =5;
 
-		this.answer = this.sum1 + this.sum2;
+		this.ans = this.sum1 + this.sum2;
 	}
 
 	sendDataToParent(): void {
 
-	    if (Number(this.usercaptcha) == Number(this.answer)) {
+	    if (Number(this.usercaptcha) == Number(this.ans)) {
 			let local_data = new Data();
 			local_data.eemail = this.email;
 			local_data.emessage = this.message;
